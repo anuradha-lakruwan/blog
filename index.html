@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VarientX Tech Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link id="prism-theme" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <link id="prism-theme-dark" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" disabled>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-title">VarientX Blog</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="theme-toggle-container">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <span class="sun-icon">☀️</span>
+                            <span class="moon-icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to VarientX Tech Blog</h2>
+                <p>Exploring cloud technologies, DevOps, and software development</p>
+            </div>
+        </section>
+
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <h2>Latest Articles</h2>
+                <div id="articles-container" class="articles-grid">
+                    <!-- Articles will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm Tharuka Sandaruwan, a passionate technologist sharing insights about cloud computing, DevOps practices, and modern software development.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 VarientX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <article id="modal-article">
+                <!-- Article content will be loaded here -->
+            </article>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
